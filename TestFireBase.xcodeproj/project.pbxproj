@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4119A7E23C93C6DEE5BB9922 /* Pods_TestFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C629FDDF3B7691E261FAC53 /* Pods_TestFireBase.framework */; };
 		E158AC4428CC330E00114F54 /* TestFireBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158AC4328CC330E00114F54 /* TestFireBaseApp.swift */; };
 		E158AC4628CC330E00114F54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158AC4528CC330E00114F54 /* ContentView.swift */; };
 		E158AC4828CC330F00114F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E158AC4728CC330F00114F54 /* Assets.xcassets */; };
 		E158AC4B28CC330F00114F54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E158AC4A28CC330F00114F54 /* Preview Assets.xcassets */; };
+		E158AC5228CC355700114F54 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158AC5128CC355700114F54 /* Firebase.swift */; };
+		E158AC5428CC3A7100114F54 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158AC5328CC3A7100114F54 /* ViewModel.swift */; };
+		E158AC5628CC3B6800114F54 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E158AC5528CC3B6800114F54 /* Model.swift */; };
+		E158AC5A28CCBE4000114F54 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E158AC5928CCBE4000114F54 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C629FDDF3B7691E261FAC53 /* Pods_TestFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EDE994F498C23D1666F621 /* Pods-TestFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFireBase.debug.xcconfig"; path = "Target Support Files/Pods-TestFireBase/Pods-TestFireBase.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB06AE6C9866BEC299AC67C /* Pods-TestFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFireBase.release.xcconfig"; path = "Target Support Files/Pods-TestFireBase/Pods-TestFireBase.release.xcconfig"; sourceTree = "<group>"; };
 		E158AC4028CC330E00114F54 /* TestFireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E158AC4328CC330E00114F54 /* TestFireBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFireBaseApp.swift; sourceTree = "<group>"; };
 		E158AC4528CC330E00114F54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E158AC4728CC330F00114F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E158AC4A28CC330F00114F54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E158AC5128CC355700114F54 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		E158AC5328CC3A7100114F54 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E158AC5528CC3B6800114F54 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E158AC5928CCBE4000114F54 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4119A7E23C93C6DEE5BB9922 /* Pods_TestFireBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B633B4730FC00C78A6116226 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C629FDDF3B7691E261FAC53 /* Pods_TestFireBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6D1D302C79FF00EDAC417AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65EDE994F498C23D1666F621 /* Pods-TestFireBase.debug.xcconfig */,
+				8CB06AE6C9866BEC299AC67C /* Pods-TestFireBase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E158AC3728CC330E00114F54 = {
 			isa = PBXGroup;
 			children = (
 				E158AC4228CC330E00114F54 /* TestFireBase */,
 				E158AC4128CC330E00114F54 /* Products */,
+				C6D1D302C79FF00EDAC417AA /* Pods */,
+				B633B4730FC00C78A6116226 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +83,12 @@
 		E158AC4228CC330E00114F54 /* TestFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				E158AC5928CCBE4000114F54 /* GoogleService-Info.plist */,
 				E158AC4328CC330E00114F54 /* TestFireBaseApp.swift */,
 				E158AC4528CC330E00114F54 /* ContentView.swift */,
+				E158AC5128CC355700114F54 /* Firebase.swift */,
+				E158AC5328CC3A7100114F54 /* ViewModel.swift */,
+				E158AC5528CC3B6800114F54 /* Model.swift */,
 				E158AC4728CC330F00114F54 /* Assets.xcassets */,
 				E158AC4928CC330F00114F54 /* Preview Content */,
 			);
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E158AC4E28CC330F00114F54 /* Build configuration list for PBXNativeTarget "TestFireBase" */;
 			buildPhases = (
+				46235BD481A6C7CEC6C49992 /* [CP] Check Pods Manifest.lock */,
 				E158AC3C28CC330E00114F54 /* Sources */,
 				E158AC3D28CC330E00114F54 /* Frameworks */,
 				E158AC3E28CC330E00114F54 /* Resources */,
+				78E6EA54BC0E02FADF8DD4A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,16 +165,62 @@
 			files = (
 				E158AC4B28CC330F00114F54 /* Preview Assets.xcassets in Resources */,
 				E158AC4828CC330F00114F54 /* Assets.xcassets in Resources */,
+				E158AC5A28CCBE4000114F54 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46235BD481A6C7CEC6C49992 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFireBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78E6EA54BC0E02FADF8DD4A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFireBase/Pods-TestFireBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFireBase/Pods-TestFireBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFireBase/Pods-TestFireBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E158AC3C28CC330E00114F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E158AC5628CC3B6800114F54 /* Model.swift in Sources */,
+				E158AC5228CC355700114F54 /* Firebase.swift in Sources */,
+				E158AC5428CC3A7100114F54 /* ViewModel.swift in Sources */,
 				E158AC4628CC330E00114F54 /* ContentView.swift in Sources */,
 				E158AC4428CC330E00114F54 /* TestFireBaseApp.swift in Sources */,
 			);
@@ -261,6 +345,7 @@
 		};
 		E158AC4F28CC330F00114F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65EDE994F498C23D1666F621 /* Pods-TestFireBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +376,7 @@
 		};
 		E158AC5028CC330F00114F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB06AE6C9866BEC299AC67C /* Pods-TestFireBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +391,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
